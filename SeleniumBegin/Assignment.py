@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
+chrome_options.add_argument("--headless")    # without interacting with UI it will execute
 driver = webdriver.Chrome(options=chrome_options)
 wait = WebDriverWait(driver, 10)
 driver.get("https://rahulshettyacademy.com/loginpagePractise/")
@@ -22,6 +23,7 @@ for window in driver.window_handles:
 
 wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,".im-para.red")))
 text_element = driver.find_element(By.CSS_SELECTOR,".im-para.red").text
+driver.execute_script("window.scrollBy(0,1000);")
 print(text_element)
 username_value = text_element.split()[4]
 print(username_value)
@@ -34,5 +36,6 @@ select.select_by_visible_text("Teacher")
 driver.find_element(By.ID,"terms").click()
 driver.find_element(By.ID,"signInBtn").click()
 error_msg = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,".alert.alert-danger.col-md-12"))).text
+driver.get_screenshot_as_file('sign.png')
 print(error_msg)
 
