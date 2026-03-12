@@ -1,6 +1,6 @@
 import pytest
 
-@pytest.mark.usefixtures('setup')  #this fixture will automatically to all methods of class
+@pytest.mark.usefixtures('setup')  #this fixture will automatically pass to all methods of class
 class TestExample:
 
    def test_fixturedemo1(self):

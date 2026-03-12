@@ -1,0 +1,13 @@
+&(asctime)s- INFO - this is impo message - Log_file) - 10 - Log_file.py)
+&(asctime)s- WARNING - this is impo warning - Log_file) - 11 - Log_file.py)
+02/26/2026 12:32:17 AM- DEBUG - there is a bug please check it - Log_file) - 9 - Log_file.py)
+02/26/2026 12:32:17 AM- INFO - this is impo message - Log_file) - 10 - Log_file.py)
+02/26/2026 12:32:17 AM- WARNING - this is impo warning - Log_file) - 11 - Log_file.py)
+02/26/2026 12:33:48 AM - DEBUG - there is a bug please check it - Log_file - 9 - Log_file.py
+02/26/2026 12:33:48 AM - INFO - this is impo message - Log_file - 10 - Log_file.py
+02/26/2026 12:33:48 AM - WARNING - this is impo warning - Log_file - 11 - Log_file.py
+02/26/2026 12:34:54 AM - DEBUG - there is a bug please check it - Log_file - 9 - Log_file.py
+02/26/2026 12:34:54 AM - INFO - this is impo message - Log_file - 10 - Log_file.py
+02/26/2026 12:34:54 AM - WARNING - this is impo warning - Log_file - 11 - Log_file.py
+02/26/2026 12:34:54 AM - ERROR - once resolve this error - Log_file - 12 - Log_file.py
+02/26/2026 12:34:54 AM - CRITICAL - Critical issue - Log_file - 13 - Log_file.py

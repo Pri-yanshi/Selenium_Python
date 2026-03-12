@@ -1,0 +1,13 @@
+import logging
+# logging.basicConfig(filename="SeleniumBegin/Log_file.py",format='%(asctime)s - %(levelname)s - %(message)s',level=logging.INFO,datefmt='%m/%d/%Y %I:%M:%S %p')
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler('Logs.log')
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s - %(module)s - %(lineno)s - %(filename)s',datefmt='%m/%d/%Y %I:%M:%S %p')
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+logger.debug('there is a bug please check it')
+logger.info('this is impo message')
+logger.warning('this is impo warning')
+logger.error('once resolve this error')
+logger.critical('Critical issue')
