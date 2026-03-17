@@ -17,4 +17,6 @@ def test_website(Browser_info):
     url = home.get_url()
     assert url.startswith("https://")
 
+    home.navigate()
+
 
